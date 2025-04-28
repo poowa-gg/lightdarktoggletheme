@@ -1,0 +1,65 @@
+  /* Base styles for light mode */
+
+  body {
+    margin:0;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* white background */
+     color: black; /* black text */
+     transition: background-color 0.3s ease, color 0.3s ease;
+ 
+
+ /* Center content horizontally and vertically */
+   display: flex;
+   flex-direction:   column;
+   align-items: center; /* center horizontally */
+   justify-content: center; /* center vertically */
+   min-height: 100vh; /* full viewport height */
+   text-align: center; /* center text inside elements */
+  }
+    
+
+ /* Dark mode styles */
+ body.dark-mode {
+    background-color: #121212;
+
+    /* dark background */
+    color: #f0f0f0; /* light text */
+
+}
+
+
+    /* Button styling */
+    #toggle-theme {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: 2px solid #000000;
+        background: transparent;
+        color: inherit;
+        border-radius: 5px;
+        transition: transparent;
+        color: inherit;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease,
+        border-color 0.3s ease;
+        margin-bottom: 2rem; /* spacing below button */
+    }
+
+    /*Button style changes in dark mode */
+    body.dark-mode #toggle-theme {
+        border-color: #f0f0f0;
+    }
+
+    /* Content styling */
+    h1 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        max-width: 600px; /*
+        limit paragraph width for readability */
+        margin: 0 auto;
+        line-height: 1.5;
+    }
